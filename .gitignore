@@ -1,0 +1,8 @@
+# NODE_MODULES
+/node_modules
+
+# PACKAGE MANAGER
+package-lock.json
+
+# RESOURCES
+/resources
