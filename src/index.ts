@@ -1,4 +1,4 @@
-import { creatematrix, createGraph, getRawMap, bfs, Node } from "./lib/index.lib";
+import { creatematrix, createGraph, getRawMap, bfs, Node } from "./lib/lib";
 
 try {
     const fileRawData: string = getRawMap();
