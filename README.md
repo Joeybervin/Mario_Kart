@@ -17,17 +17,18 @@ Bienvenue, ingénieur(e) en optimisation ! Ce projet consiste à développer un 
 
 ## 📚 Structure du Projet
 
-📂 public/resources/  
-  ├── simple.map : Une carte facile pour commencer.  
-  ├── complex.map : Un défi modéré avec plus d'obstacles.  
-  ├── hard.map : Pour les experts en algorithmes !  
+```plaintext
+  ├── 📂 public
+  │   └── 📂 resources          # Fichiers de ressources pour les cartes du jeu
+  │       ├── 🗺️ simple.map        # Une carte facile pour commencer
+  │       ├── 🗺️ complex.map       # Un défi modéré avec plus d'obstacles
+  │       ├── 🗺️ hard.map          # Pour les experts en algorithmes !
+  ├── 📂 src
+  │   ├── 📄 index.ts              # Point d'entrée principal du projet
+  │   ├── 📂 lib
+  │   │   └── lib.ts            # Fonctions principales, y compris l'algorithme utilisé (ex. 
 
-📂 src/  
-  ├──  index.ts  : Point d'entrée principal du projet, où le fichier de carte est chargé et l'algorithme est exécuté.
-  📂 lib/  
-    ├── lib.ts : Contient les fonctions principales, y compris l'algorithme utilisé (ex. BFS).  
-
-
+```
 
 ## ⚙️ **Installation**
 ### 1. Pré-requis
