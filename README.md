@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./public/MK_star.png" alt="Logo du projet" width="400">
+  <img src="./public/MK_star.png" alt="Logo du projet" width="200">
 </p>
 
-# 🚗 Mario Kart Pathfinding Challenge
+# 🏎️ Mario Kart Pathfinding Challenge
 
 **Créez le chemin le plus rapide à travers les circuits les plus complexes !**
 
@@ -14,20 +14,22 @@ Bienvenue, ingénieur(e) en optimisation ! Ce projet consiste à développer un 
 - Optimiser le code pour maximiser la vitesse d'exécution.
 - Utiliser TypeScript pour une structure claire et typée.
 
+
 ## 📚 Structure du Projet
 
-📂 resources/
+📂 public/resources/  
   ├── simple.map : Une carte facile pour commencer.  
   ├── complex.map : Un défi modéré avec plus d'obstacles.  
   ├── hard.map : Pour les experts en algorithmes !  
 
-📂 lib/
-  ├── index.lib.ts : Contient les fonctions principales, y compris l'algorithme utilisé (ex. BFS).
-  
-📄 index.ts
+📂 src/  
+  ├──  index.ts  : Point d'entrée principal du projet, où le fichier de carte est chargé et l'algorithme est exécuté.
+  📂 lib/  
+    ├── lib.ts : Contient les fonctions principales, y compris l'algorithme utilisé (ex. BFS).  
 
 
-## ⚙️ Installation et Lancement
+
+## ⚙️ **Installation**
 ### 1. Pré-requis
 Assurez-vous que les outils suivants sont installés sur votre machine :
 
@@ -45,15 +47,23 @@ Assurez-vous que les outils suivants sont installés sur votre machine :
 npm install
 ```
 
-### **3. Lancer le projet**
+
+
+
+## 🚀 **Lancement**
+### **1. Lancer le projet**
 En mode développement :
 ```bash
-  ts-node ./index.ts <map-path>
+  npm dev -- ./public/resources/<map_filename>
 ```
 En mode production :
 ```bash
-  npm start
+  npm run compile
+  nom start -- ./public/resources/<map_filename>
 ```
+
+
+
 
 ## **🛠️ Fonctionnalités**
 
@@ -66,7 +76,7 @@ En mode production :
 
 ## 🗺️ Format des Fichiers .map
 
-* Exemple :
+**Exemple :**  
 ```plaintext
   oo..E
   o..o.
@@ -75,14 +85,16 @@ En mode production :
   .....
 ```
 
-* Légende :
-  S : Point de départ.  
-  E : Point d'arrivée.  
-  o : Obstacle (non traversable).  
-  . : Zone traversable.  
+**Légende :**  
+
+S : Point de départ.  
+E : Point d'arrivée.  
+o : Obstacle (non traversable).  
+. : Zone traversable.  
+
+
 
 ## 🔍 Algorithme Utilisé
-
 **BFS *(Breadth-First Search)***
 * Adapté pour trouver le chemin le plus court dans un graphe non pondéré.
 * Explore chaque niveau de voisins avant de passer au suivant.
@@ -92,10 +104,12 @@ Optimisations :
 * Gestion efficace des coordonnées pour limiter les calculs inutiles.
 
 
+
 ## 🌟 Ressources Utilisées
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/fr)
 - [ts-node](https://github.com/TypeStrong/ts-node)
+
 
 
 # 🏎️ Bonne chance et que le chemin le plus court soit avec vous ! 🚀
